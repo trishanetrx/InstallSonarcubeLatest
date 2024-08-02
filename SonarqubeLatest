@@ -15,7 +15,7 @@ sudo apt install postgresql-15 -y
 sudo systemctl is-enabled postgresql
 sudo systemctl status postgresql
 sudo -u postgres psql <<EOF
-CREATE USER sonarqube WITH PASSWORD 'uuUU123!@#';
+CREATE USER sonarqube WITH PASSWORD 'PasswordHere';
 CREATE DATABASE sonarqube OWNER sonarqube;
 GRANT ALL PRIVILEGES ON DATABASE sonarqube TO sonarqube;
 \l
