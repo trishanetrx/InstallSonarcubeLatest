@@ -48,7 +48,7 @@ sudo chown -R sonarqube:sonarqube /opt/sonarqube
 #sudo bash -c 'cat <<EOF > /opt/sonarqube/conf/sonar.properties
 sudo tee -a /opt/sonarqube/conf/sonar.properties >/dev/null << EOF
 sonar.jdbc.username=sonarqube
-sonar.jdbc.password=uuUU123!@#
+sonar.jdbc.password=PasswordHere
 sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube
 sonar.search.javaOpts=-Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError
 sonar.web.host=127.0.0.1
